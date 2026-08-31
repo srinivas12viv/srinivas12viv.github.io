@@ -53,6 +53,19 @@ img {
   border-bottom: 1px solid rgba(217, 225, 230, 0.85);
 }
 
+.profile-image-wrap {
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  display: block;
+}
+
 .nav-wrap {
   min-height: 72px;
   display: flex;
