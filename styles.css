@@ -54,7 +54,7 @@ img {
 }
 
 .profile-image-wrap {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .profile-image {
@@ -63,6 +63,7 @@ img {
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+  display: block;
 }
 
 .nav-wrap {
