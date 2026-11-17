@@ -1,0 +1,7 @@
+# Reference documents are authoring inputs, not public website assets.
+# The standard GitHub Pages Jekyll build omits these paths.
+exclude:
+  - assets/Vivek_CV.pdf
+  - assets/Vivek_CV.tex
+  - assets/text
+  - README.md

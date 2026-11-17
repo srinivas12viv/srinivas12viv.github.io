@@ -1,0 +1,491 @@
+\documentclass[10pt,letterpaper]{article}
+
+% =========================================================
+% Academic CV - faculty search version
+% Tailored for geotechnical engineering faculty applications
+% =========================================================
+
+\usepackage[left=0.72in,right=0.72in,top=0.62in,bottom=0.58in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{needspace}
+\usepackage{ragged2e}
+\usepackage{comment}
+
+\usepackage{etoolbox}
+
+
+% ---------- Color palette ----------
+\definecolor{navy}{HTML}{1F4E68}
+\definecolor{charcoal}{HTML}{2E2E2E}
+\definecolor{midgray}{HTML}{606060}
+\definecolor{rulegray}{HTML}{B7C4CC}
+
+% ---------- Hyperlinks ----------
+\hypersetup{
+    colorlinks=true,
+    urlcolor=navy,
+    linkcolor=navy,
+    pdfauthor={Srinivas Vivek Bokkisa},
+    pdftitle={Academic Curriculum Vitae - Srinivas Vivek Bokkisa}
+}
+
+% ---------- Page style ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[L]{\fontsize{8.5}{10}\selectfont\textcolor{midgray}{Srinivas Vivek Bokkisa - Academic CV}}
+\fancyfoot[R]{\fontsize{8.5}{10}\selectfont\textcolor{midgray}{Page \thepage\ of \pageref*{LastPage}}}
+\setlength{\footskip}{18pt}
+
+% ---------- General typography ----------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\linespread{0.99}\selectfont
+\raggedbottom
+\emergencystretch=1.5em
+\color{charcoal}
+
+\setlist[itemize]{leftmargin=1.15em,itemsep=0.5pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+\setlist[enumerate]{leftmargin=1.55em,itemsep=2pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+
+
+% ---------- Compact section style ----------
+\titleformat{\section}
+  {\needspace{2\baselineskip}\large\bfseries\color{navy}}
+  {}{0pt}{}
+  [\vspace{-0.35em}\textcolor{rulegray}{\rule{\textwidth}{0.55pt}}]
+
+\titlespacing*{\section}{0pt}{3pt}{0pt}
+
+% ---------- Compact subsection style ----------
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{charcoal}}
+  {}{1pt}{}
+
+\titlespacing*{\subsection}{0pt}{4pt}{1pt}
+
+% ---------- Reusable commands ----------
+\newcommand{\entry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & \textit{#3}\\[-1pt]
+    \textcolor{midgray}{#2} &
+  \end{tabularx}\vspace{-1pt}
+}
+
+
+% Degree entry
+\newcommand{\degreeentry}[4]{%
+    \noindent
+    \textbf{#1} \hfill #3\\
+    #2%
+    \ifstrempty{#4}{}{%
+        \enspace|\enspace #4%
+    }%
+    \par
+}
+
+\newcommand{\researchpillar}[2]{%
+  \textbf{\textcolor{navy}{#1}}\par
+  \vspace{1pt}{\small #2}\par
+}
+
+
+% Numbered publication with an internal hyperlink target
+\newcommand{\pub}[2]{%
+    \item \hypertarget{pub:#1}{}#2
+}
+
+% Clickable citation to a publication
+\newcommand{\pubref}[1]{%
+    \hyperlink{pub:#1}{\textcolor{navy}{[#1]}}%
+}
+
+
+\begin{document}
+
+% =========================================================
+% HEADER
+% =========================================================
+{\fontsize{20}{22}\selectfont\bfseries\color{charcoal} Srinivas Vivek Bokkisa}\par
+\vspace{3pt}
+{\large\bfseries\color{navy} Postdoctoral Fellow}\par
+\vspace{2pt}
+{\small School of Civil and Environmental Engineering, Georgia Institute of Technology | Atlanta, GA, USA}\par
+\vspace{5pt}
+{\small
+\href{mailto:sbokkisa3@gatech.edu}{sbokkisa3@gatech.edu}
+\;|\;
+\href{https://scholar.google.com/citations?user=DLtSDLgAAAAJ\&hl=en}{Google Scholar}
+%\;|\;
+%\href{https://orcid.org/0000-0002-0801-3637}{ORCID}
+%\;|\;
+%\href{https://www.linkedin.com/in/srinivasvivek/}{LinkedIn} 
+\;|\;
+\href{https://srinivas12viv.github.io/}{Personal Webpage}}
+
+
+% =========================================================
+\section{Research Profile}
+% =========================================================
+Computational geomechanics researcher advancing
+constitutive modeling, numerical methods, and
+multiscale geomaterial mechanics to understand and
+predict the behavior of geotechnical systems.
+Research interests encompass fabric anisotropy,
+soil liquefaction and instability, mechanics-informed
+site characterization and inverse analysis,
+large-deformation simulations, and performance-based
+assessment of geotechnical infrastructure, with
+emerging directions in scientific machine learning
+and AI-informed computational modeling.
+\par
+
+
+% =========================================================
+\section{Academic Appointments \& Professional Experience}
+% =========================================================
+
+\entry{Postdoctoral Fellow}
+{Georgia Institute of Technology,
+School of Civil and Environmental Engineering}
+{May 2026--Present}
+\begin{itemize}
+\item Advancing mechanics-based frameworks under a variety of numerical approaches (FEM, MPM, PFEM) for the characterization of complex geomaterials and the assessment of the performance of geosystems (focusing on CPT and slope systems). 
+
+\item Exploring scientific machine learning
+and AI-informed approaches for constitutive
+modeling and surrogate numerical simulation,
+emphasizing the integration of physical principles
+to improve predictive generalization.
+\end{itemize}
+
+\vspace{2pt}
+\entry{Geotechnical Intern -- Mining}{AECOM, Denver, CO, USA}{Jun. 2024--Aug. 2024}
+\begin{itemize}
+    \item Conducted advanced numerical modeling of tailings storage facilities and developed a database integrating rapid vane shear and co-located CPT data to investigate residual strength in mine tailings.
+\end{itemize}
+
+
+
+\section{Education}
+
+\degreeentry{Ph.D. in Civil Engineering}
+{Georgia Institute of Technology}{2026}
+{Advisor: Dr. Jorge Macedo}
+
+\degreeentry{M.S. in Computational Science and Engineering}
+{Georgia Institute of Technology}{2023}{}
+
+\degreeentry{M.Phil. in Civil Engineering
+(\textit{Concentration in Scientific Computation})}
+{Hong Kong University of Science and Technology}{2019}
+{Advisor: Dr. Gang Wang}
+
+\degreeentry{B.Tech. in Civil Engineering}
+{Indian Institute of Technology Guwahati}{2017}{}
+
+% =========================================================
+\section{Awards \& Honors}
+% =========================================================
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
+    \item \textbf{George F. Sowers Distinguished Graduate
+    Student Award}, Georgia Tech, 2026.
+    Recognizes outstanding doctoral achievement in
+    scholarship, research, teaching, and service.
+
+    \item \textbf{Outstanding Geomaterials Research Award},
+    Georgia Tech, 2025.
+    Recognizes research novelty and original
+    contributions to geotechnical engineering.
+
+    \item \textbf{Selected Participant, ALERT Olek
+    Zienkiewicz School on Constitutive Modeling of
+    Geomaterials}, Prague, Czechia, 2025.
+
+    \item \textbf{Paul W. Mayne Award}, Georgia Tech, 2024.
+    Recognizes outstanding academic performance,
+    research, and service during early doctoral study.
+
+    \item \textbf{Best Poster Award}, Annual Geotechnical
+    Student Poster Symposium, Geo-Institute
+    \& Georgia Tech, 2024.
+
+    \item \textbf{Selected Participant, APRU-IRIDeS
+    Multi-Hazards Summer School},
+    Tohoku University, Sendai, Japan, 2018.
+
+    \item \textbf{Postgraduate Scholarship},
+    Hong Kong University of Science and Technology,
+    2017--2019.
+\end{itemize}
+
+% =========================================================
+\section{Publications \& Manuscripts}
+% =========================================================
+% =========================================================
+\subsection{Peer-Reviewed Journal Articles}
+% =========================================================
+
+\begin{enumerate}[label={[\arabic*]}, leftmargin=*, itemsep=0pt]
+
+\pub{1}{\textbf{Srinivas Vivek, B.}, and Macedo, J. (2026). ``Fabric Effects on Cone Penetration Testing: A Numerical Investigation.'' \textit{Computers and Geotechnics}. Accepted. \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6864496}{[preprint]}}
+
+\pub{2}{\textbf{Srinivas Vivek, B.}, Macedo, J., and Arduino, P. (2026). ``On the integration of an ACST-based bounding surface model.'' \textit{Computers and Geotechnics}. \href{https://doi.org/10.1016/j.compgeo.2026.107911}{[DOI]}}
+
+\pub{3}{\textbf{Srinivas Vivek, B.}, and Macedo, J. (2025). ``Challenges in NorSand to model CSD stress paths and proposed modifications.'' \textit{Canadian Geotechnical Journal}. \href{https://cdnsciencepub.com/doi/pdf/10.1139/cgj-2024-0546}{[DOI]}}
+
+\pub{4}{\textbf{Srinivas Vivek, B.}, and Macedo, J. (2024). ``Influence of anisotropic consolidation on the instability of loose granular soils under undrained and drained loading.'' \textit{Canadian Geotechnical Journal}. \href{https://cdnsciencepub.com/doi/abs/10.1139/cgj-2023-0683}{[DOI]}}
+
+\pub{5}{\textbf{Srinivas Vivek, B.}, Macedo, J., and Petalas, A. L. (2023). ``Fabric anisotropy effects on static liquefaction under constant shear drained loading.'' \textit{Computers and Geotechnics}. \href{https://www.sciencedirect.com/science/article/pii/S0266352X23004810}{[DOI]}}
+
+\pub{6}{\textbf{Srinivas Vivek, B.}, Macedo, J., Petalas, A. L., and Arson, C. (2022). ``Assessing flow liquefaction triggering considering fabric anisotropy effects under the ACST framework.'' \textit{Computers and Geotechnics}. \href{https://www.sciencedirect.com/science/article/pii/S0266352X22001537}{[DOI]}}
+
+\pub{7}{Kumar, A., and \textbf{Srinivas, B. V.} (2017). ``Easy to use empirical correlations for liquefaction and no liquefaction conditions.'' \textit{Geotechnical and Geological Engineering}, 35(4), 1383--1407. \href{https://link.springer.com/content/pdf/10.1007\%2Fs10706-017-0183-2.pdf}{[DOI]}}
+
+\end{enumerate}
+
+
+% =========================================================
+\subsection{Manuscripts Ready for Submission}
+% =========================================================
+\begin{enumerate}[resume, label={[\arabic*]}, leftmargin=*, itemsep=0pt]
+
+\pub{8}{\textbf{Srinivas Vivek, B.}, and Macedo, J. ``Directional Second-Order Work and Instability under Triaxial Stress Relief.'' Manuscript ready for submission; under internal review.}
+
+\pub{9}{\textbf{Srinivas Vivek, B.}, and Macedo, J. ``Fabric Effects on Slope Instability and Deformation:
+A Numerical Investigation.'' Manuscript ready for submission; under internal review.}
+
+\end{enumerate}
+
+% =========================================================
+\section{Conference Papers \& Presentations}
+% =========================================================
+\begin{enumerate}[resume, label={[\arabic*]}, leftmargin=*, itemsep=0pt]
+
+\pub{10}{\textbf{Srinivas Vivek, B.}, and Macedo, J. (2025). ``Challenges in NorSand for modeling stress-relief paths in tailings storage facilities.'' \textit{Tailings and Mine Waste Conference 2025}.}
+
+\pub{11}{\textbf{Srinivas Vivek, B.}, and Macedo, J. (2024). ``Fabric effects on the onset of static liquefaction under drained conditions: Implications for mine tailings.'' \textit{Tailings and Mine Waste Conference 2024}.}
+
+\pub{12}{\textbf{Srinivas Vivek, B.}, Macedo, J., and Petalas, A. L. (2023). ``On the effects of fabric on the instability onset under constant shear drained loading.'' \textit{EMI Conference 2023}.}
+
+\pub{13}{\textbf{Srinivas Vivek, B.}, Macedo, J., Petalas, A. L., and Arson, C. (2023). ``Effects of initial consolidation on the triggering of static liquefaction considering fabric effects.'' \textit{Geo-Congress 2023}. \href{https://ascelibrary.org/doi/epdf/10.1061/9780784484708.008}{[PDF]}}
+
+\pub{14}{\textbf{Srinivas Vivek, B.}, Macedo, J., Petalas, A. L., and Arson, C. (2022). ``Effects of soil fabric on the triggering of static liquefaction: Implications for mine tailings.'' \textit{Tailings and Mine Waste Conference 2022}.}
+
+\pub{15}{\textbf{Srinivas Vivek, B.}, Macedo, J., Petalas, A. L., and Arson, C. (2022). ``On the effects of fabric on the instability surface of granular materials.'' \textit{EMI Conference 2022}.}
+
+\pub{16}{\textbf{Srinivas Vivek, B.}, Wang, G., Duruo, H., and Feng, J. (2019). ``Fabric evolution in post-liquefaction and re-liquefaction of granular soils using 3D discrete element modeling.'' \textit{Proceedings of the 7th International Conference on Earthquake Geotechnical Engineering}, Rome, Italy, vol. 4, pp. 1461--1468. CRC Press.}
+
+\pub{17}{\textbf{Srinivas Vivek, B.}, and Wang, G. (2019). ``DEM modeling of Toyoura sand considering real particle shapes.'' \textit{23rd Annual Conference of HKSTAM and 15th Jiangsu-Hong Kong Forum on Mechanics and its Application}, Hong Kong, p. 41.}
+
+\pub{18}{\textbf{Srinivas Vivek, B.}, and Mohanty, S. (2016). ``1D ground response analysis of Bhubaneswar soil in India.'' \textit{6th International Conference on Recent Advances in Geotechnical Earthquake Engineering and Soil Dynamics}, New Delhi, India.}
+
+\end{enumerate}
+
+% =========================================================
+\section{Theses \& Dissertations}
+% =========================================================
+\begin{enumerate}[resume, label={[\arabic*]}, leftmargin=*, itemsep=0pt]
+
+\pub{19}{\textbf{Srinivas Vivek, B.} (2026).
+``Multiscale Assessment of Fabric in Granular Soils.''
+Ph.D. dissertation, Georgia Institute of Technology.}
+
+\pub{20}{\textbf{Srinivas Vivek, B.} (2019).
+``Fabric Evolution in 3D Discrete Element modeling of
+Soil Liquefaction.''
+M.Phil. dissertation, Hong Kong University of Science
+and Technology. \href{https://doi.org/10.14711/thesis-991012752454703412}{[DOI]}}
+
+\end{enumerate}
+
+
+% =========================================================
+\section{Research Software \& Computational Tools}
+% =========================================================
+
+\entry{Microstructure \& Fabric Explorer ---
+Granular Fabric Analysis Toolkit}
+{Scientific Toolkit Development |
+\href{https://srinivas12viv.github.io/microstructure-fabric-explorer/}
+{Project Webpage}}
+{2019--Present}
+\begin{itemize}
+    \item Developed computational tools for granular
+    microstructure characterization using DEM simulations
+    and X-ray micro-CT images, integrating contact detection,
+    pore-space segmentation, fabric tensor analysis,
+    force-network characterization, and Minkowski-based
+    particle--void descriptors with interactive 2D/3D
+    visualizations to investigate microstructural
+    mechanisms underlying geomaterial behavior.
+\end{itemize}
+
+\vspace{2pt}
+\entry{SoilWorkspace --- Integrated Soil Data Analysis,
+Calibration, and Simulation Platform}
+{Independent Software Development | Lead Developer |
+\href{https://srinivas12viv.github.io/SoilWorkspace/}
+{Project Glimpse}}
+{May 2026--Present}
+\begin{itemize}
+    \item Developing an extensible platform integrating
+    geotechnical laboratory data analysis, constitutive
+    model calibration, and virtual element testing,
+    with reproducible workflows, support for user-defined
+    models, and interoperability with simulation software
+    to bridge research and engineering practice.
+
+    \item Planned extensions include automatic-differentiation-based
+    frameworks for constitutive model implementation
+    and verification, simplifying model development
+    and enabling systematic evaluation of formulations
+    and numerical integration schemes.
+\end{itemize}
+
+\vspace{2pt}
+\entry{NorSand Interactive Visualizations ---
+Constitutive Modeling Educational Resource}
+{Computational Education |
+\href{https://srinivas12viv.github.io/NorSand/}
+{Interactive Resource}}
+{2022}
+\begin{itemize}
+    \item Developed interactive educational visualizations
+    of NorSand constitutive mechanics, illustrating image
+    state, dilatancy, yield-surface evolution, and hardening
+    through interactive plots to strengthen
+    students' physical intuition and understanding of
+    critical state soil mechanics; used in instruction
+    at Georgia Tech, Colorado School of Mines, and
+    Virginia Tech.
+\end{itemize}
+
+
+
+% =========================================================
+\section{Scientific Computing \& Technical Skills}
+% =========================================================
+
+\textbf{Programming:}
+Python, Fortran, C++, MATLAB.
+\vspace{2pt}
+
+\textbf{Numerical Methods \& Software:}
+DEM (LIGGGHTS, YADE);
+FEM (PLAXIS, Abaqus, OpenSees);
+MPM (GeoTaichi, Anura3D);
+PFEM (Kratos); constitutive model implementation
+(UMAT/UDSM), numerical integration and verification.
+\vspace{2pt}
+
+\textbf{High-Performance Computing \& Cyberinfrastructure:}
+TACC, DesignSafe, Slurm.
+\vspace{2pt}
+
+\textbf{Scientific Computing \& Visualization:}
+ParaView, ImageJ, SPAM;
+X-ray micro-CT image analysis and fabric characterization.
+
+% =========================================================
+\section{Teaching Experience}
+% =========================================================
+\entry{Graduate Teaching Assistant}{Georgia Institute of Technology}{Jan. 2021--May 2025}
+\begin{itemize}
+    \item \textbf{Courses:} Introduction to Geotechnical Engineering; Data Analytics in Civil and Environmental Engineering.
+    \item Developed and delivered tutorials on machine learning, AI, and data analytics using civil engineering datasets.
+    \item Led two laboratory sections, conducted geotechnical laboratory demonstrations, held office hours, and evaluated student assignments.
+\end{itemize}
+
+\vspace{2pt}
+\entry{Graduate Teaching Assistant}{Hong Kong University of Science and Technology}{Feb. 2018--May 2019}
+\begin{itemize}
+    \item Supported instruction in \textit{Rock Mechanics} and \textit{Construction Materials} through tutorial teaching, concrete laboratory demonstrations, assignment evaluation, and grading.
+\end{itemize}
+
+\vspace{5pt}
+\textbf{Teaching Interests:}
+Computational Geomechanics; Soil Mechanics;
+Critical State Soil Mechanics; Constitutive Modeling;
+Numerical Methods in Geotechnical Engineering;
+Geotechnical Earthquake Engineering;
+Site Characterization; Scientific Machine Learning
+for Geotechnical Engineering.
+
+
+% =========================================================
+\section{Student Mentoring}
+% =========================================================
+
+\entry{Graduate Research Mentor, Dr. Jorge Macedo's Research Group}
+{Georgia Institute of Technology}{Aug. 2023--Present}
+\begin{itemize}
+    \item Mentored graduate students in computational
+    geomechanics, including a master's student who
+    transitioned to doctoral research at Caltech
+    and a current Ph.D. student. Provided guidance
+    in constitutive theory, numerical implementation,
+    and interpretation of simulation results,
+    emphasizing independent problem-solving,
+    critical thinking, and reproducible research
+    practices.
+\end{itemize}
+
+
+\entry{VIP Mentor, DeepMeLT and Extreme Events Engineering Groups}{Georgia Institute of Technology}{Sep. 2021--May 2025}
+\begin{itemize}
+    \item Mentored 4--6 undergraduate researchers per semester
+    in computational geomechanics
+    and high-performance computing using TACC resources,
+    fostering independent problem-solving, computational
+    proficiency, and research skills.
+\end{itemize}
+
+\vspace{2pt}
+\entry{Student Academic Mentor, Geosystems Engineering}{Georgia Institute of Technology}{Jan. 2024--Dec. 2024}
+\begin{itemize}
+    \item Mentored a first-year graduate student through monthly meetings focused on academic progress, professional development, and graduate-community integration.
+\end{itemize}
+
+\vspace{2pt}
+\entry{Student Academic Mentor}{Indian Institute of Technology Guwahati}{Aug. 2015--Apr. 2016}
+
+% =========================================================
+\section{Invited Lectures \& Seminars}
+% =========================================================
+\begin{itemize}
+    \item \textbf{Invited expert lecture}, ``Toward Performance-Based Assessment in Tailings Engineering,'' Indian Geotechnical Society Dhanbad chapter, IIT (ISM) Dhanbad, India, 2026.
+
+    \item \textbf{Invited speaker}, ``Fabric Effects in Static Liquefaction,'' Barr Engineering Co., 2023.
+
+    \item \textbf{Invited lectures}, ``Visualizing NorSand,'' Critical State Soil Mechanics courses, Colorado School of Mines and Georgia Tech.
+\end{itemize}
+% =========================================================
+\section{Academic \& Professional Service}
+% =========================================================
+\textbf{Peer Review Service}\par
+\vspace{2pt}
+Reviewer for \textit{JGGE} (ASCE), \textit{IJG} (ASCE), and \textit{Open Geomechanics}.
+\vspace{2pt}
+
+\entry{Vice President, Geotechnical Society}{Georgia Institute of Technology}{Aug. 2023--Aug. 2024}
+\begin{itemize}
+    \item Managed organizational finances and helped organize academic and community events for the Geosystems community.
+\end{itemize}
+\vspace{2pt}
+
+\entry{General Secretary of Academics, Association of Civil Engineers}{Indian Institute of Technology Guwahati}{Oct. 2015--Oct. 2016}
+\end{document}

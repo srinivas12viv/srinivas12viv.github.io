@@ -1,201 +1,95 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Academic website of Srinivas Vivek Bokkisa, computational geomechanics engineer and postdoctoral researcher working on soil mechanics, constitutive modelling, numerical simulation, and SoilWorkspace." name="description"/>
-<meta content="#173f5f" name="theme-color"/>
-<title>Srinivas Vivek Bokkisa | Computational Geomechanics</title>
-<link href="styles.css" rel="stylesheet"/>
-<style>
-    .skip-link { position: absolute; z-index: 200; top: 8px; left: 8px; padding: 10px 14px; color: #fff; background: #173f5f; transform: translateY(-150%); }
-    .skip-link:focus { transform: translateY(0); }
-    .reading-progress { position: absolute; right: 0; bottom: -1px; left: 0; height: 3px; background: transparent; }
-    .reading-progress span { display: block; width: 0; height: 100%; background: #a66b35; }
-    .back-to-top { display: inline-block; margin-top: 22px; color: var(--navy); font-size: .85rem; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 4px; }
-    :target { scroll-margin-top: 92px; }
-    a:focus-visible, button:focus-visible { outline: 3px solid #a66b35; outline-offset: 3px; }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  
-    /* Prominent, accessible profile portrait; overrides the compact image in styles.css. */
-    .hero .profile-image-wrap { width: 192px; height: 192px; max-width: 100%; margin-bottom: 18px; }
-    .hero .profile-image-wrap .profile-image { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; border-radius: 50%; }
-    @media (max-width: 600px) {
-      .hero .profile-image-wrap { width: 156px; height: 156px; }
-    }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Srinivas Vivek Bokkisa is a computational geomechanics researcher at Georgia Tech working on constitutive modeling, soil fabric, liquefaction, and research software.">
+  <meta name="theme-color" content="#f5f4ee">
+  <title>Srinivas Vivek Bokkisa | Computational Geomechanics</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-<a class="skip-link" href="#main-content">Skip to content</a>
-<header class="site-header">
-<div class="container nav-wrap">
-<a aria-label="Srinivas Vivek Bokkisa — home" class="brand" href="#top">
-<span aria-hidden="true" class="brand-mark">SV</span>
-<span class="brand-text">Srinivas Vivek</span>
-</a>
-<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="nav-toggle" type="button">
-<span></span><span></span><span></span>
-</button>
-<nav aria-label="Primary navigation" class="nav-links" id="primary-navigation">
-<a href="#research">Research</a>
-<a href="#projects">Current work</a>
-<a href="#publications">Publications</a>
-
-
-<a href="#teaching">Teaching</a>
-<a href="#software">Software</a>
-<a href="#resources">Resources</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
-<div aria-hidden="true" class="reading-progress"><span id="reading-progress-bar"></span></div>
-</header>
-<main id="main-content">
-<div id="top"></div>
-<section aria-labelledby="page-title" class="hero">
-<div class="container hero-grid">
-<div class="hero-copy">
-<div class="profile-image-wrap">
-<img alt="Srinivas Vivek Bokkisa" class="profile-image" fetchpriority="high" height="192" src="assets/profile.jpg" width="192"/>
-</div>
-<p class="eyebrow">COMPUTATIONAL GEOMECHANICS ENGINEER · GEOTECHNICAL RESEARCHER</p>
-<h1 id="page-title">Srinivas Vivek Bokkisa</h1>
-<p class="hero-role">Postdoctoral Fellow, School of Civil and Environmental Engineering<br/>Georgia Institute of Technology</p>
-<p class="hero-summary">I am a Computational geomechanics engineer specializing in advanced constitutive modelling, multiscale soil mechanics, and numerical simulation of geotechnical systems. My research connects soil fabric and material-scale behavior to field characterization, large-deformation analysis, and performance-based assessment of geotechnical infrastructure.</p>
-<div class="hero-actions">
-<a class="button primary" href="#research">Explore my research</a>
-
-<a class="button secondary" href="assets/Vivek_CV.pdf" rel="noopener" target="_blank">View CV <span class="visually-hidden"> (opens in a new tab)</span></a>
-</div>
-<div aria-label="Academic profiles" class="scholar-links">
-<a href="https://scholar.google.com/citations?user=DLtSDLgAAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar</a>
-<a href="https://orcid.org/0000-0002-0801-3637" rel="noopener" target="_blank">ORCID</a>
-<a href="https://www.linkedin.com/in/srinivasvivek/" rel="noopener" target="_blank">LinkedIn</a>
-<a href="https://github.com/srinivas12viv" rel="noopener" target="_blank">GitHub</a>
-</div>
-
-</div>
-<aside aria-label="Research themes" class="hero-panel">
-<div class="panel-label">Research at a glance</div>
-<div class="metric"><span class="metric-index">01</span><div><strong>Multiscale soil mechanics</strong><p>Deposition-induced fabric, X-ray micro-CT, DEM, anisotropy, static liquefaction, and material instability.</p></div></div>
-<div class="metric"><span class="metric-index">02</span><div><strong>Constitutive &amp; computational modelling</strong><p>NorSand and SANISAND-family models; constitutive integration, calibration, FEM, MPM, and DEM.</p></div></div>
-<div class="metric"><span class="metric-index">03</span><div><strong>Mechanics-informed site characterization</strong><p>Numerical CPT interpretation, penetration mechanisms, and future extensions to vane shear and dilatometer tests.</p></div></div>
-<div class="metric"><span class="metric-index">04</span><div><strong>Infrastructure performance</strong><p>Mine tailings, stress-relief instability, large deformation, and performance-based geotechnical assessment.</p></div></div>
-</aside>
-</div>
-</section>
-<section aria-labelledby="research-title" class="section" id="research">
-<div class="container">
-<div class="section-heading">
-<p class="eyebrow">RESEARCH PROGRAM</p>
-<h2 id="research-title">From measurable soil fabric to engineering-scale predictions</h2>
-<p>My research connects particle-scale observations, constitutive behavior, field measurements, and engineering-scale prediction. It builds on contributions in soil fabric and instability while developing directions in inverse analysis, data-informed modelling, and practical tools for advanced constitutive simulation.</p>
-</div>
-<div class="pillar-grid">
-<article class="pillar-card"><div class="card-number">01</div><h3>Multiscale mechanics &amp; constitutive modelling</h3><p>Using X-ray micro-CT, DEM, and fabric-sensitive constitutive frameworks to examine how deposition, microstructure, and evolving material state affect soil response.</p><ul><li>Deposition-induced fabric</li><li>X-ray micro-CT and DEM</li><li>Liquefaction and instability</li><li>NorSand and SANISAND-family models</li></ul></article>
-<article class="pillar-card"><div class="card-number">02</div><h3>Mechanics-informed site characterization</h3><p>Investigating the stress paths and deformation mechanisms induced by in-situ tests, beginning with large-deformation CPT simulations.</p><ul><li>CPT penetration mechanics</li><li>Fabric effects on resistance</li><li>Numerical test simulation</li><li>Inverse interpretation of soil properties</li></ul></article>
-<article class="pillar-card"><div class="card-number">03</div><h3>Predictive computational geomechanics</h3><p>Connecting constitutive response and material-instability indicators with system-level deformation and performance in tailings and geotechnical infrastructure.</p><ul><li>FEM and MPM</li><li>Stress-path-dependent instability</li><li>Tailings and geo-infrastructure</li><li>Performance-based assessment</li></ul></article>
-<article class="pillar-card"><div class="card-number">04</div><h3>Observability &amp; predictive modelling</h3><p>A longer-term direction integrating measurements, constitutive models, and computational simulation to update uncertain geotechnical states and support uncertainty-aware forecasts.</p><ul><li>Monitoring-informed state updating</li><li>Data assimilation (future)</li><li>Uncertainty-aware prediction</li><li>Geotechnical digital twins (future)</li></ul></article>
-</div>
-<a class="back-to-top" href="#top">Back to top ↑</a>
-</div>
-</section>
-<section aria-labelledby="projects-title" class="section section-soft" id="projects">
-<div class="container">
-<div class="section-heading compact"><p class="eyebrow">SELECTED CURRENT WORK</p><h2 id="projects-title">Research directions</h2></div>
-<div class="project-list">
-<article class="project"><div class="project-type">SITE CHARACTERIZATION</div><div class="project-body"><h3>Influence of fabric on cone penetration resistance</h3><p>Large-deformation numerical investigation of how fabric orientation affects cone resistance and the stress and deformation mechanisms around an advancing cone, even when conventional initial-state descriptors are similar.</p><div class="tags"><span>MPM</span><span>CPT</span><span>Fabric anisotropy</span><span>Granular soils</span></div></div></article>
-<article class="project"><div class="project-type">TAILINGS</div><div class="project-body"><h3>Constitutive modelling and stress-relief instability</h3><p>Evaluating fabric-sensitive constitutive models, NorSand predictions under constant-shear-drained stress paths, and directional material-instability criteria under stress relief. These mechanisms inform future system-level performance assessments.</p><div class="tags"><span>NorSand</span><span>Constitutive modelling</span><span>Stress relief</span><span>Instability</span></div></div></article>
-<article class="project"><div class="project-type">MULTISCALE GEOMECHANICS</div><div class="project-body"><h3>Microstructure, fabric, and granular response</h3><p>Using X-ray micro-CT and particle-scale methods to quantify how depositional processes create fabric, with implications for future deposition-aware constitutive models.</p><div class="tags"><span>Micro-CT</span><span>DEM</span><span>Fabric tensors</span><span>Soil behavior</span></div></div></article>
-</div>
-<a class="back-to-top" href="#top">Back to top ↑</a>
-</div>
-</section>
-<section aria-labelledby="publications-title" class="section" id="publications">
-<div class="container">
-<div class="section-heading compact"><p class="eyebrow">SELECTED PUBLICATIONS</p><h2 id="publications-title">Journal publications and current manuscripts</h2><p>Six published journal articles are listed below. For the full and most up-to-date record, see <a class="text-link" href="https://scholar.google.com/citations?user=DLtSDLgAAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar</a> or my CV.</p></div>
-<div class="publication-list">
-<article class="publication"><div class="pub-year">2026</div><div><h3>On the integration of an ACST-based bounding surface model</h3><p><strong>Srinivas Vivek, B.</strong>, Macedo, J., and Arduino, P.</p><p class="venue">Computers and Geotechnics</p><a href="https://doi.org/10.1016/j.compgeo.2026.107911" rel="noopener" target="_blank">View publication →</a></div></article>
-<article class="publication"><div class="pub-year">2025</div><div><h3>Challenges in NorSand to model CSD stress paths and proposed modifications</h3><p><strong>Srinivas Vivek, B.</strong>, and Macedo, J.</p><p class="venue">Canadian Geotechnical Journal</p><a href="https://doi.org/10.1139/cgj-2024-0546" rel="noopener" target="_blank">View publication →</a></div></article>
-<article class="publication"><div class="pub-year">2024</div><div><h3>Influence of anisotropic consolidation on the instability of loose granular soils under undrained and drained loading</h3><p><strong>Srinivas Vivek, B.</strong>, and Macedo, J.</p><p class="venue">Canadian Geotechnical Journal</p><a href="https://doi.org/10.1139/cgj-2023-0683" rel="noopener" target="_blank">View publication →</a></div></article>
-<article class="publication"><div class="pub-year">2023</div><div><h3>Fabric anisotropy effects on static liquefaction under constant shear drained loading</h3><p><strong>Srinivas Vivek, B.</strong>, Macedo, J., and Petalas, A. L.</p><p class="venue">Computers and Geotechnics</p><a href="https://www.sciencedirect.com/science/article/pii/S0266352X23004810" rel="noopener" target="_blank">View publication →</a></div></article>
-<article class="publication"><div class="pub-year">2022</div><div><h3>Assessing flow liquefaction triggering considering fabric anisotropy effects under the ACST framework</h3><p><strong>Srinivas Vivek, B.</strong>, Macedo, J., Petalas, A. L., and Arson, C.</p><p class="venue">Computers and Geotechnics</p><a href="https://www.sciencedirect.com/science/article/pii/S0266352X22001537" rel="noopener" target="_blank">View publication →</a></div></article>
-<article class="publication"><div class="pub-year">2017</div><div><h3>Easy to use empirical correlations for liquefaction and no liquefaction conditions</h3><p>Kumar, A., and <strong>Srinivas, B. V.</strong></p><p class="venue">Geotechnical and Geological Engineering</p><a href="https://doi.org/10.1007/s10706-017-0183-2" rel="noopener" target="_blank">View publication →</a></div></article>
-</div>
-<div class="section-heading compact" style="margin-top:42px"><p class="eyebrow">MANUSCRIPT UNDER REVIEW</p><h3>Current manuscript</h3></div>
-<div class="publication-list"><article class="publication"><div class="pub-year">2026</div><div><h3>Fabric Effects on Cone Penetration Testing: A Numerical Investigation</h3><p><strong>Srinivas Vivek, B.</strong>, and Macedo, J.</p><p class="venue">Computers and Geotechnics — under review (not yet published)</p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6864496" rel="noopener" target="_blank">View preprint →</a></div></article></div>
-<div class="section-action"><a class="button secondary" href="assets/Vivek_CV.pdf" rel="noopener" target="_blank">Full CV &amp; publication list</a></div>
-<a class="back-to-top" href="#top">Back to top ↑</a>
-</div>
-</section>
-<section aria-labelledby="experience-title" class="section section-dark" id="experience">
-<div class="container"><div class="section-heading compact light"><p class="eyebrow">RESEARCH + PRACTICE</p><h2 id="experience-title">Academic depth with engineering application</h2></div>
-<div class="experience-grid">
-<article><p class="experience-date">2026–Present</p><h3>Postdoctoral Fellow</h3><p class="experience-place">Georgia Institute of Technology</p><p>Fabric-dependent soil behavior, constitutive modelling and calibration, mechanics-informed characterization, and computational boundary-value analysis.</p></article>
-<article><p class="experience-date">2024</p><h3>Geotechnical Intern — Mining</h3><p class="experience-place">AECOM, Denver</p><p>Tailings-dam and runout analysis using MPM, with engineering interpretation of rapid-vane-shear and co-located CPT data.</p></article>
-<article><p class="experience-date">2017–2026</p><h3>Academic training</h3><p class="experience-place">Georgia Tech · HKUST · IIT Guwahati</p><p>Ph.D. in Civil Engineering (2026); M.S. in Computational Science and Engineering (2023); M.Phil. in Civil Engineering (2019); B.Tech. in Civil Engineering (2017).</p></article>
-</div>
-<a class="back-to-top" href="#top" style="color:#fff">Back to top ↑</a>
-</div>
-</section>
-<section aria-labelledby="recognition-title" class="section section-soft" id="recognition">
-<div class="container"><div class="section-heading compact"><p class="eyebrow">ACADEMIC RECOGNITION &amp; OUTREACH</p><h2 id="recognition-title">Awards and invited lectures</h2></div>
-<div class="project-list">
-<article class="project"><div class="project-type">AWARDS</div><div class="project-body"><h3>Selected awards and honors</h3><p>George F. Sowers Distinguished Graduate Student Award (Georgia Tech, 2026); Outstanding Geomaterials Research Award (2025); Paul W. Mayne Award (2024); Best Poster Award (2024); HKUST Postgraduate Scholarship (2017–2019).</p></div></article>
-<article class="project"><div class="project-type">INVITED LECTURES</div><div class="project-body"><h3>Sharing research and computational teaching</h3><p>“Toward Performance-Based Assessment in Tailings Engineering,” Indian Geotechnical Society chapter, IIT (ISM) Dhanbad (2026); “Fabric Effects in Static Liquefaction,” Barr Engineering (2023); and invited NorSand visualization instruction at Colorado School of Mines and Georgia Tech.</p></div></article>
-</div>
-<a class="back-to-top" href="#top">Back to top ↑</a>
-</div>
-</section>
-<section aria-labelledby="teaching-title" class="section" id="teaching">
-<div class="container two-col"><div><div class="section-heading compact"><p class="eyebrow">TEACHING &amp; MENTORING</p><h2 id="teaching-title">Mechanics, visualization, and research independence</h2></div>
-<p>My teaching connects physical observations, mechanics, mathematical reasoning, and computation. I have supported geotechnical engineering and civil-engineering data analytics courses, developed an interactive NorSand learning resource, and mentored undergraduate and graduate researchers.</p>
-<div class="simple-list">
-<div><strong>Teaching experience</strong><span>Georgia Tech: Introduction to Geotechnical Engineering and Data Analytics in Civil and Environmental Engineering; earlier teaching assistant experience at HKUST.</span></div>
-<div><strong>Graduate &amp; undergraduate mentoring</strong><span>Mentored a master’s student implementing NorSand for particle finite element cone penetration modelling; currently mentor a doctoral student extending this research. Also mentored VIP undergraduate research teams.</span></div>
-<div><strong>Teaching interests</strong><span>Soil Mechanics; Engineering Properties of Soils; Geotechnical Earthquake Engineering; Finite Element Methods; constitutive modelling; computational geomechanics; and site characterization.</span></div>
-</div>
-</div><aside class="quote-panel"><span aria-hidden="true" class="quote-mark">“</span><p>My goal as an educator is to help students connect mathematics, mechanics, and physical observations to make sound engineering judgments.</p></aside></div>
-<div class="container"><a class="back-to-top" href="#top">Back to top ↑</a></div>
-</section>
-<section aria-labelledby="software-title" class="section" id="software">
-<div class="container">
-<div class="section-heading compact"><p class="eyebrow">RESEARCH SOFTWARE DEVELOPMENT</p><h2 id="software-title">SoilWorkspace</h2><p>An integrated platform under development to bring soil laboratory data analysis, advanced constitutive model calibration, and virtual geotechnical laboratory testing into a connected workflow.</p></div>
-<div class="project-list"><article class="project"><div class="project-type">INDEPENDENT SOFTWARE DEVELOPMENT · 2026–PRESENT</div><div class="project-body"><h3>Bridging constitutive modelling research and engineering practice</h3><p>As lead developer, I am building SoilWorkspace for geotechnical practitioners and researchers. The platform is intended to help practitioners organize and interpret laboratory test data, calibrate advanced soil constitutive models, and assess model predictions for engineering projects.</p><p>For researchers, the longer-term goal is an extensible environment to implement, test, and validate user-defined constitutive models against experimental observations, supported by virtual simulations of advanced geotechnical laboratory tests.</p><div class="tags"><span>Laboratory data analysis</span><span>Constitutive calibration</span><span>Virtual laboratory testing</span><span>User-defined models</span><span>Research-to-practice</span></div></div></article></div>
-<a class="back-to-top" href="#top">Back to top ↑</a>
-</div>
-</section>
-<section aria-labelledby="resources-title" class="section section-soft" id="resources">
-<div class="container"><div class="section-heading compact"><p class="eyebrow">OPEN RESEARCH &amp; EDUCATION</p><h2 id="resources-title">Tools and resources</h2></div>
-<div class="resource-grid">
-<a class="resource-card" href="https://srinivas12viv.github.io/NorSand/" rel="noopener" target="_blank"><span class="resource-label">EDUCATIONAL RESOURCE</span><h3>NorSand Visualization</h3><p>Interactive visualizations explaining image state, maximum dilatancy, and other critical-state concepts in the NorSand constitutive model; used in invited instruction.</p><span class="resource-link">Open project →</span></a>
-<a class="resource-card" href="https://srinivas12viv.github.io/microstructure-fabric-explorer" rel="noopener" target="_blank"><span class="resource-label">RESEARCH SOFTWARE</span><h3>Microstructure &amp; Fabric Explorer</h3><p>Interactive resource for exploring microstructure and fabric characteristics of granular materials and particle-scale simulation data.</p><span class="resource-link">Explore project →</span></a>
-</div>
-<a class="back-to-top" href="#top">Back to top ↑</a>
-</div>
-</section>
-<section aria-labelledby="contact-title" class="section contact-section" id="contact">
-<div class="container contact-grid"><div><p class="eyebrow">CONTACT</p><h2 id="contact-title">Research collaboration, teaching, and academic opportunities</h2><p>I welcome conversations around computational geomechanics, granular materials, tailings, constitutive modelling, and site characterization.</p></div>
-<div class="contact-card"><a class="contact-main" href="mailto:sbokkisa3@gatech.edu">sbokkisa3@gatech.edu</a><div class="contact-links"><a href="https://scholar.google.com/citations?user=DLtSDLgAAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar</a><a href="https://orcid.org/0000-0002-0801-3637" rel="noopener" target="_blank">ORCID</a><a href="https://www.linkedin.com/in/srinivasvivek/" rel="noopener" target="_blank">LinkedIn</a><a href="assets/Vivek_CV.pdf" rel="noopener" target="_blank">CV</a></div></div>
-</div>
-</section>
-<div class="container" style="padding-bottom:24px"><a class="back-to-top" href="#top">Back to top ↑</a></div>
-</main>
-<footer><div class="container footer-wrap"><p>© <span id="year"></span> Srinivas Vivek Bokkisa</p><p>Computational Geomechanics · Constitutive Modelling · Research Software</p></div></footer>
-<script src="script.js"></script>
-<script>
-    (() => {
-      const bar = document.getElementById('reading-progress-bar');
-      if (!bar) return;
-      const update = () => {
-        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-        bar.style.width = `${scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0}%`;
-      };
-      window.addEventListener('scroll', update, { passive: true });
-      window.addEventListener('resize', update);
-      update();
-    })();
-  </script>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Srinivas Vivek Bokkisa, home"><span class="brand-mark" aria-hidden="true">svb.</span><span>Srinivas Vivek Bokkisa</span></a>
+      <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav id="primary-navigation" class="nav-links" aria-label="Primary navigation">
+        <a href="#research">Research</a><a href="#publications">Publications</a><a href="#software">Software</a><a href="#teaching">Teaching</a><a href="#background">Background</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="hero container" id="introduction" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Computational geomechanics</p>
+        <h1 id="page-title">Srinivas Vivek<br><em>Bokkisa.</em></h1>
+        <p class="hero-role">Postdoctoral Fellow · Georgia Institute of Technology</p>
+        <p class="hero-intro">Understanding soil behavior.<br>Connecting mechanics to prediction.</p>
+        <p class="hero-description">I study how the internal structure of soils shapes their behavior, and develop computational models and tools to understand the response of geotechnical systems.</p>
+        <div class="hero-actions"><a class="button" href="#research">Explore my research <span aria-hidden="true">↘</span></a><a class="text-link" href="https://scholar.google.com/citations?user=DLtSDLgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <figure class="hero-portrait">
+        <div class="portrait-frame"><img src="assets/profile.jpg" alt="Srinivas Vivek Bokkisa" width="600" height="720" fetchpriority="high"></div>
+        <figcaption><span>School of Civil &amp; Environmental Engineering</span><span>Atlanta, Georgia</span></figcaption>
+      </figure>
+      <div class="hero-foot"><span>Soil fabric <i>/</i> Constitutive modeling <i>/</i> Numerical simulation</span><a href="#research">Discover the work below <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="section container" id="research" aria-labelledby="research-title">
+      <div class="section-label"><span>01 / Research</span><span>From particles to geosystems</span></div>
+      <div class="section-intro"><h2 id="research-title">Small-scale structure.<br><em>System-scale behavior.</em></h2><p>My work brings together multiscale geomaterial mechanics, constitutive modeling, and numerical methods. The aim is to connect physical mechanisms with useful predictions for site characterization, soil instability, and geotechnical infrastructure.</p></div>
+      <div class="research-grid">
+        <article class="research-item"><span class="item-number">01</span><h3>Fabric &amp; granular mechanics</h3><p>Investigating how deposition, particle arrangement, and evolving microstructure influence anisotropy, liquefaction, and instability in granular soils.</p><p class="methods">X-ray micro-CT · DEM · Fabric characterization</p></article>
+        <article class="research-item"><span class="item-number">02</span><h3>Constitutive &amp; numerical modeling</h3><p>Developing, implementing, and evaluating soil models to connect material response with large-deformation simulations and geotechnical boundary-value problems.</p><p class="methods">NorSand · ACST · FEM / MPM / PFEM</p></article>
+        <article class="research-item"><span class="item-number">03</span><h3>Characterization &amp; performance</h3><p>Studying cone penetration mechanisms, stress-relief instability, and slope response to support mechanics-informed interpretation and assessment of geosystems.</p><p class="methods">CPT · Inverse analysis · Tailings &amp; slopes</p></article>
+      </div>
+      <div class="research-note"><span class="eyebrow">Emerging directions</span><p>I am exploring scientific machine learning and AI-informed computational modeling, with an emphasis on integrating physical principles into constitutive models and surrogate simulations.</p></div>
+    </section>
+    <section class="publication-section" id="publications" aria-labelledby="publications-title">
+      <div class="container section">
+        <div class="section-label"><span>02 / Publications</span><a href="https://scholar.google.com/citations?user=DLtSDLgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Full record on Google Scholar <span aria-hidden="true">↗</span></a></div>
+        <div class="section-intro"><h2 id="publications-title">Research in print.</h2><p>Selected journal articles on soil fabric, constitutive integration, and the mechanics of liquefaction and instability.</p></div>
+        <div class="publication-list">
+          <article class="publication"><span class="pub-year">2026</span><div><div class="pub-status">Accepted</div><h3><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6864496" target="_blank" rel="noopener">Fabric Effects on Cone Penetration Testing: A Numerical Investigation <span aria-hidden="true">↗</span></a></h3><p><strong>Srinivas Vivek, B.</strong>, and Macedo, J.</p><p class="venue">Computers and Geotechnics · Preprint available</p></div></article>
+          <article class="publication"><span class="pub-year">2026</span><div><h3><a href="https://doi.org/10.1016/j.compgeo.2026.107911" target="_blank" rel="noopener">On the integration of an ACST-based bounding surface model <span aria-hidden="true">↗</span></a></h3><p><strong>Srinivas Vivek, B.</strong>, Macedo, J., and Arduino, P.</p><p class="venue">Computers and Geotechnics</p></div></article>
+          <article class="publication"><span class="pub-year">2025</span><div><h3><a href="https://doi.org/10.1139/cgj-2024-0546" target="_blank" rel="noopener">Challenges in NorSand to model CSD stress paths and proposed modifications <span aria-hidden="true">↗</span></a></h3><p><strong>Srinivas Vivek, B.</strong>, and Macedo, J.</p><p class="venue">Canadian Geotechnical Journal</p></div></article>
+          <article class="publication"><span class="pub-year">2024</span><div><h3><a href="https://doi.org/10.1139/cgj-2023-0683" target="_blank" rel="noopener">Influence of anisotropic consolidation on the instability of loose granular soils under undrained and drained loading <span aria-hidden="true">↗</span></a></h3><p><strong>Srinivas Vivek, B.</strong>, and Macedo, J.</p><p class="venue">Canadian Geotechnical Journal</p></div></article>
+          <article class="publication"><span class="pub-year">2023</span><div><h3><a href="https://www.sciencedirect.com/science/article/pii/S0266352X23004810" target="_blank" rel="noopener">Fabric anisotropy effects on static liquefaction under constant shear drained loading <span aria-hidden="true">↗</span></a></h3><p><strong>Srinivas Vivek, B.</strong>, Macedo, J., and Petalas, A. L.</p><p class="venue">Computers and Geotechnics</p></div></article>
+        </div>
+        <details class="earlier-publications"><summary>Earlier journal articles <span aria-hidden="true">+</span></summary><div class="publication-list">
+          <article class="publication"><span class="pub-year">2022</span><div><h3><a href="https://www.sciencedirect.com/science/article/pii/S0266352X22001537" target="_blank" rel="noopener">Assessing flow liquefaction triggering considering fabric anisotropy effects under the ACST framework <span aria-hidden="true">↗</span></a></h3><p><strong>Srinivas Vivek, B.</strong>, Macedo, J., Petalas, A. L., and Arson, C.</p><p class="venue">Computers and Geotechnics</p></div></article>
+          <article class="publication"><span class="pub-year">2017</span><div><h3><a href="https://doi.org/10.1007/s10706-017-0183-2" target="_blank" rel="noopener">Easy to use empirical correlations for liquefaction and no liquefaction conditions <span aria-hidden="true">↗</span></a></h3><p>Kumar, A., and <strong>Srinivas, B. V.</strong></p><p class="venue">Geotechnical and Geological Engineering</p></div></article>
+        </div></details>
+      </div>
+    </section>
+    <section class="section container" id="software" aria-labelledby="software-title">
+      <div class="section-label"><span>03 / Software &amp; tools</span><a href="https://github.com/srinivas12viv" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
+      <div class="section-intro"><h2 id="software-title">Making mechanics<br><em>explorable.</em></h2><p>I build scientific tools that connect data, models, and visualization, supporting reproducible research and a more intuitive understanding of soil behavior.</p></div>
+      <div class="software-grid">
+        <article class="software-card featured"><div class="tool-topline"><span>01 / Research platform</span><span class="tool-status">In development</span></div><div class="tool-visual workflow" aria-hidden="true"><span>DATA</span><b>→</b><span>MODEL</span><b>→</b><span>RESPONSE</span></div><h3>SoilWorkspace</h3><p>An integrated environment for soil laboratory data analysis, constitutive model calibration, and virtual element testing. Designed around reproducible workflows and extensible, user-defined models.</p><a class="tool-link" href="https://srinivas12viv.github.io/SoilWorkspace/" target="_blank" rel="noopener">View project glimpse <span aria-hidden="true">↗</span></a></article>
+        <article class="software-card"><div class="tool-topline"><span>02 / Scientific toolkit</span></div><div class="tool-visual fabric" aria-hidden="true"><svg viewBox="0 0 260 100" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.2"><ellipse cx="40" cy="42" rx="23" ry="15" transform="rotate(-28 40 42)"/><ellipse cx="91" cy="30" rx="24" ry="16" transform="rotate(24 91 30)"/><ellipse cx="140" cy="45" rx="23" ry="16" transform="rotate(-35 140 45)"/><ellipse cx="191" cy="30" rx="22" ry="16" transform="rotate(20 191 30)"/><ellipse cx="227" cy="65" rx="22" ry="15" transform="rotate(-38 227 65)"/><ellipse cx="174" cy="76" rx="22" ry="15" transform="rotate(18 174 76)"/><ellipse cx="80" cy="75" rx="23" ry="16" transform="rotate(-20 80 75)"/><path stroke-dasharray="3 4" d="M40 42 91 30 140 45 191 30 227 65 174 76 140 45 80 75 40 42"/></g></svg></div><h3>Microstructure &amp; <br>Fabric Explorer</h3><p>Tools for granular microstructure characterization from DEM and X-ray micro-CT, including contact detection, fabric tensors, pore-space analysis, and interactive 2D/3D visualization.</p><a class="tool-link" href="https://srinivas12viv.github.io/microstructure-fabric-explorer/" target="_blank" rel="noopener">Explore the toolkit <span aria-hidden="true">↗</span></a></article>
+        <article class="software-card"><div class="tool-topline"><span>03 / Interactive education</span></div><div class="tool-visual model" aria-hidden="true"><svg viewBox="0 0 260 100" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.2"><path d="M28 12V85H240" opacity=".45"/><path d="M35 85Q85 -28 150 85M35 85Q120 -65 220 85"/><path d="M35 85 206 15" stroke-dasharray="3 4"/></g></svg></div><h3>NorSand <br>Visualizations</h3><p>Interactive explanations of image state, dilatancy, yield-surface evolution, and hardening. An educational resource used in instruction at Georgia Tech, Colorado School of Mines, and Virginia Tech.</p><a class="tool-link" href="https://srinivas12viv.github.io/NorSand/" target="_blank" rel="noopener">Open interactive resource <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+    <section class="teaching-section" id="teaching" aria-labelledby="teaching-title"><div class="section container">
+      <div class="section-label"><span>04 / Teaching &amp; mentoring</span><span>Mechanics meets intuition</span></div>
+      <div class="teaching-grid"><div><h2 id="teaching-title">Connecting theory<br>to <em>physical intuition.</em></h2><p class="teaching-intro">My teaching connects physical observations, mathematical reasoning, and computation. Through visual tools and research mentoring, I help students build independent problem-solving skills and interpret what their models predict.</p><p class="teaching-interests"><strong>Teaching interests</strong><br>Soil mechanics · Constitutive modeling · Computational geomechanics · Numerical methods · Geotechnical earthquake engineering · Site characterization</p></div><div class="teaching-rows">
+        <article><span class="eyebrow">Georgia Tech · 2021–2025</span><h3>Geotechnics &amp; data analytics</h3><p>Teaching assistant for Introduction to Geotechnical Engineering and Data Analytics in Civil and Environmental Engineering, including laboratory instruction and computational tutorials.</p></article>
+        <article><span class="eyebrow">HKUST · 2018–2019</span><h3>Materials &amp; mechanics</h3><p>Teaching support for Rock Mechanics and Construction Materials through tutorials, laboratory demonstrations, and assessment.</p></article>
+        <article><span class="eyebrow">Research mentoring</span><h3>Building research independence</h3><p>Mentoring graduate researchers in constitutive theory and numerical implementation, and undergraduate VIP teams in computational geomechanics and high-performance computing.</p></article>
+      </div></div>
+    </div></section>
+    <section class="section container" id="background" aria-labelledby="background-title">
+      <div class="section-label"><span>05 / Background</span><span>Research, practice &amp; community</span></div>
+      <div class="section-intro"><h2 id="background-title">A foundation in mechanics.<br><em>A computational perspective.</em></h2></div>
+      <div class="background-grid"><div><h3 class="column-title">Experience</h3><div class="timeline-entry"><span>2026–Present</span><h4>Postdoctoral Fellow</h4><p>Georgia Institute of Technology</p><p class="entry-detail">Computational geomaterial mechanics, site characterization, and performance assessment of geosystems.</p></div><div class="timeline-entry"><span>Summer 2024</span><h4>Geotechnical Intern · Mining</h4><p>AECOM · Denver, Colorado</p><p class="entry-detail">Numerical modeling of tailings storage facilities and interpretation of rapid vane shear and CPT data.</p></div>
+      <h3 class="column-title education-title">Education</h3><div class="degree"><span>2026</span><div><h4>Ph.D., Civil Engineering</h4><p>Georgia Institute of Technology</p></div></div><div class="degree"><span>2023</span><div><h4>M.S., Computational Science &amp; Engineering</h4><p>Georgia Institute of Technology</p></div></div><div class="degree"><span>2019</span><div><h4>M.Phil., Civil Engineering</h4><p>Hong Kong University of Science and Technology</p></div></div><div class="degree"><span>2017</span><div><h4>B.Tech., Civil Engineering</h4><p>Indian Institute of Technology Guwahati</p></div></div></div>
+      <div><h3 class="column-title">Selected recognition</h3><div class="award"><span>2026</span><div><h4>George F. Sowers Distinguished Graduate Student Award</h4><p>Georgia Institute of Technology</p></div></div><div class="award"><span>2025</span><div><h4>Outstanding Geomaterials Research Award</h4><p>Georgia Institute of Technology</p></div></div><div class="award"><span>2024</span><div><h4>Paul W. Mayne Award</h4><p>Georgia Institute of Technology</p></div></div><div class="award"><span>2024</span><div><h4>Best Poster Award</h4><p>Geo-Institute &amp; Georgia Tech</p></div></div><div class="community-note"><h3>Sharing knowledge</h3><p>Invited talks on tailings engineering and static liquefaction, alongside NorSand visualization lectures. Peer reviewer for ASCE geotechnical journals and <em>Open Geomechanics</em>; former Vice President of Georgia Tech’s Geotechnical Society.</p></div></div></div>
+    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">06 / Get in touch</p><h2 id="contact-title">Let’s connect<br><em>ideas and mechanics.</em></h2><p>For conversations about research, computational tools,<br>teaching, or collaboration.</p></div><div class="contact-details"><a class="email-link" href="mailto:sbokkisa3@gatech.edu">sbokkisa3@gatech.edu <span aria-hidden="true">↗</span></a><p>School of Civil and Environmental Engineering<br>Georgia Institute of Technology · Atlanta, USA</p><div class="profile-links"><a href="https://scholar.google.com/citations?user=DLtSDLgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://orcid.org/0000-0002-0801-3637" target="_blank" rel="noopener">ORCID ↗</a><a href="https://github.com/srinivas12viv" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/srinivasvivek/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></section>
+  </main>
+  <footer class="container footer-inner"><p>© <span id="year">2026</span> Srinivas Vivek Bokkisa</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>

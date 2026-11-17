@@ -1,69 +1,47 @@
+document.documentElement.classList.add('js');
 
-const toggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".nav-links");
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav-links');
 
 if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", String(isOpen));
+  toggle.hidden = false;
+  const closeMenu = () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open navigation');
+  };
+  closeMenu();
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
   });
-
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
-    });
-  });
-}
-
-const year = document.getElementById("year");
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
-
-const soilWorkspaceUrl = "https://srinivas12viv.github.io/SoilWorkspace/";
-
-// Point every SoilWorkspace mention to its hosted site, including the navigation and CTA links.
-document.querySelectorAll('a[href="#software"]').forEach((link) => {
-  if (link.textContent.includes("SoilWorkspace")) {
-    link.href = soilWorkspaceUrl;
-  }
-});
-
-// Make other visible mentions clickable as well, without nesting links.
-const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-const textNodes = [];
-while (textWalker.nextNode()) {
-  const node = textWalker.currentNode;
-  if (node.nodeValue.includes("SoilWorkspace") && !node.parentElement.closest("a, script, style")) {
-    textNodes.push(node);
-  }
-}
-
-textNodes.forEach((node) => {
-  const parts = node.nodeValue.split("SoilWorkspace");
-  const fragment = document.createDocumentFragment();
-  parts.forEach((part, index) => {
-    if (part) fragment.appendChild(document.createTextNode(part));
-    if (index < parts.length - 1) {
-      const link = document.createElement("a");
-      link.href = soilWorkspaceUrl;
-      link.textContent = "SoilWorkspace";
-      fragment.appendChild(link);
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && nav.classList.contains('open')) {
+      closeMenu();
+      toggle.focus();
     }
   });
-  node.replaceWith(fragment);
-});
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.header-inner')) closeMenu();
+  });
+  window.matchMedia('(max-width: 850px)').addEventListener('change', closeMenu);
+}
 
-// Describe the DEM Visualization resource as open-source code, not software.
-const demCard = [...document.querySelectorAll(".resource-card")].find((card) =>
-  card.querySelector("h3")?.textContent.includes("DEM Visualization")
-);
-if (demCard) {
-  const label = demCard.querySelector(".resource-label");
-  const description = demCard.querySelector("p");
-  if (label) label.textContent = "OPEN-SOURCE CODES";
-  if (description) {
-    description.textContent = "Open-source codes for analysis and visualization of Discrete Element Method simulation data.";
-  }
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
+
+if ('IntersectionObserver' in window) {
+  const links = [...document.querySelectorAll('.nav-links a')];
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      links.forEach(link => {
+        if (link.hash === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    });
+  }, { rootMargin: '-15% 0px -55% 0px', threshold: 0 });
+  document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
 }
